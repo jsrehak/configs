@@ -40,8 +40,7 @@ else
 fi
 
 if [ "$color_prompt" = yes ]; then
-#    PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\]$(__git_ps1 " (%s)")\[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]'
-    PS1="\[\033[38;5;10m\][\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;2m\]\u\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;10m\]@\h\[$(tput sgr0)\]\[\033[38;5;15m\]: \[$(tput sgr0)\]\[\033[38;5;51m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]\[\033[38;5;10m\]$(__git_ps1 " (%s)")]\[$(tput sgr0)\]\[\033[38;5;15m\] \\$ \[$(tput sgr0)\]\[\e[1;37m\]"
+    PS1='\[\e[0;32m\]\u@\h\[\e[m\] \[\033[38;5;14m\]\w\[\e[m\]$(__git_ps1 " (%s)")\[\e[1;32m\] \$\[\e[m\] \[\e[1;37m\]'
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
