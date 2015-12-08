@@ -40,7 +40,7 @@ TEXT
 
 
  {"full_text": "" ,"color":"\#ffff00","separator":false,"separator_block_width":6},\
- {"full_text":"[${battery_percent BAT0}%]","color":"\#808080","separator":false,"separator_block_width":6},
+ {"full_text":"[${battery_percent BAT0}%]","color":"\#ffffff","separator":false,"separator_block_width":6},
 
 
  { "full_text" : " / ${fs_free /}" , "color" : "\#ffffff"},
