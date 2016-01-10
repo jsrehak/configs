@@ -1,4 +1,4 @@
 archey3
 
 # Anaconda location
-export PATH="/home/josh/anaconda2/bin:$PATH"
+# export PATH="/home/josh/anaconda2/bin:$PATH"

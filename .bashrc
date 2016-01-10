@@ -67,9 +67,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# added by Anaconda 2.3.0 installer
-export PATH="/home/josh/anaconda/bin:$PATH"
-
 # Start X at login
 #[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 
