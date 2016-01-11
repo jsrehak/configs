@@ -32,7 +32,7 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
-bindsym $mod+d exec rofi -show run -font "Terminus 15"
+bindsym $mod+d exec rofi -show run -font "Terminus 15" -opacity 80 -lines 5 -bg "#000000" -bc "#000000" -fg "#ffcc55" -hlfg "#ffffff" -hlbg "#4377ba"
 #bindsym $mod+d exec rofi -show run -terminal terminator -lines 5 -eh 3 -width 50 -opacity 80 -bw 0 -bc "#5C1F34" -bg "#010609" -hlbg "#a63b69" -hlfg "#ffffff" -fg "#ffffff" -font "Terminus 15"
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -169,6 +169,10 @@ bar {
         #status_command i3status
 	status_command ~/.i3/.conkyi3
 	position top
+	colors {
+	       focused_workspace #ffcc55 #5487ff #ffffff
+	       inactive_workspace #453422 #223344 #bb8844
+	}
 }
 
 #Set keybindings
@@ -176,6 +180,11 @@ exec xmodmap .xmodmap
 
 #Start network manager applet
 exec --no-startup-id nm-applet
+
+#Start Compton
+exec compton --config .compton.conf -b
+#Disable titlebars
+new_window pixel
 
 #Run compton as a background daemon
 #exec --no-startup-id compton -cCGb --backend glx --vsync opengl

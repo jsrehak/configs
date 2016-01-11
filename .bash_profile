@@ -10,5 +10,9 @@ esac
 
 export PATH
 
+#Set editor
+EDITOR=emacs
+export EDITOR
+
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
