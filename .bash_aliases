@@ -14,3 +14,8 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+#Aliases to turn on and off the DP display
+alias dpon='xrandr --output DP1 --auto --above eDP1'
+alias dpoff='xrandr --output DP1 --off'
+
