@@ -76,3 +76,6 @@ fi
 if [ "$(uname -r | grep -c ARCH)" = 1 ]; then
     . ~/.bash_arch           # Bash settings specific to arch
 fi
+
+#Start keychain for SSH keys
+eval $(keychain --eval --quiet --confhost id_rsa)
