@@ -96,12 +96,13 @@ bindsym $mod+Shift+d exec --no-startup-id i3lock -c 000000
 set $WS1 1 
 set $WS2 2 
 set $WS3 3 
+set $WS4 4 
 
 # switch to workspace
 bindsym $mod+1 workspace $WS1
 bindsym $mod+2 workspace $WS2
 bindsym $mod+3 workspace $WS3
-bindsym $mod+4 workspace 4
+bindsym $mod+4 workspace $WS4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
@@ -113,7 +114,7 @@ bindsym $mod+0 workspace 10
 bindsym $mod+Shift+1 move container to workspace $WS1
 bindsym $mod+Shift+2 move container to workspace $WS2
 bindsym $mod+Shift+3 move container to workspace $WS3
-bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+4 move container to workspace $WS4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7

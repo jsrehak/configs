@@ -19,3 +19,6 @@ alias l='ls -CF'
 alias dpon='xrandr --output DP1 --auto --above eDP1'
 alias dpoff='xrandr --output DP1 --off'
 
+#Alias to add/remove anaconda from PATH
+alias condatog='source ~/.scripts/conda_toggle.sh'
+alias moose='source ~/.bash_moose'

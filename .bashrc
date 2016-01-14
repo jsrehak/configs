@@ -72,6 +72,7 @@ fi
 
 # Other files ########################################################
 . ~/.bash_aliases        # Bash aliases
+. ~/.bash_moose          # Environment variables for moose
 
 if [ "$(uname -r | grep -c ARCH)" = 1 ]; then
     . ~/.bash_arch           # Bash settings specific to arch
