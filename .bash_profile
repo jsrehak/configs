@@ -20,5 +20,9 @@ export PATH
 EDITOR=emacs
 export EDITOR
 
+#Set XDG Base directory specification
+XDG_CONFIG_HOME=~/.config
+export XDG_CONFIG_HOME
+
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
