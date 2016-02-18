@@ -38,7 +38,7 @@ TEXT
 # JSON for i3bar
 
  [
- {"full_text": "${exec xtitle -t 50 | iconv -t "UTF-8"}", "color":"\#ffcc55"},
+ {"full_text": "${exec xtitle -e -t 50 | iconv -t "UTF-8//TRANSLIT"}", "color":"\#ffcc55"},
  {"full_text": "${exec bash ~/.scripts/volume.sh}", "color":"\#ffcc55"},
  {"full_text": "" ,"color":"\#ffcc55","separator":false,"separator_block_width":6},\
  {"full_text":"${battery BAT0} ${battery BAT1} (${battery_time BAT0} ${battery_time BAT1})","color":"\#ffcc55","separator":true},
