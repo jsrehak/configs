@@ -25,7 +25,9 @@ font pango:Terminus 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+# bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec xterm -rv -fa "Liberation Mono:size=10:antialias=false"
+
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -190,9 +192,9 @@ exec xmodmap .xmodmap
 exec --no-startup-id nm-applet
 
 #Start Compton
-exec compton --config .compton.conf -b
+#exec compton --config .compton.conf -b
 #Disable titlebars
-new_window pixel
+#new_window pixel
 
 #Run compton as a background daemon
 #exec --no-startup-id compton -cCGb --backend glx --vsync opengl
