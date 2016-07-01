@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Joshua Rehak
+	email = jsrehak@gmail.com
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	unstange = 'reset HEAD --'
+	last = 'log -1 HEAD'
