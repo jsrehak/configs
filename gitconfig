@@ -7,5 +7,5 @@
 	ci = commit
 	st = status
 	br = branch
-	unstange = 'reset HEAD --'
-	last = 'log -1 HEAD'
+	unstage = reset HEAD --
+	last = log -1 HEAD
