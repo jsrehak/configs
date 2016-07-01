@@ -72,28 +72,4 @@ fi
 
 # Other files ########################################################
 . ~/.bash_aliases        # Bash aliases
-# . ~/.bash_moose          # Environment variables for moose
-
-if [ "$(uname -r | grep -c ARCH)" = 1 ]; then
-    . ~/.bash_arch           # Bash settings specific to my arch system
-fi
-
-# Set proxies for use on the terminal
-if [ `ifconfig | grep -c "141.221.120\|141.221.124"` -ge 1 ]; then
-  echo 'Using FN Proxies'
-  proxy="http://fnwebbalance.fn.inl.gov:8080"
-elif [ `ifconfig | grep -c "134.20.\|141.221."` -ge 1 ]; then
-  echo 'Using INL Proxies'
-  proxy="http://webbalance.inl.gov:8080"
-else
-  # No Proxies
-  echo 'No Proxies set'
-  proxy=""
-fi
-
-if [ "x$proxy" != "x" ]; then
-  proxy_array=(http_proxy https_proxy ftp_proxy ftps_proxy)
-  for proxy_item in ${proxy_array[*]}; do
-    export $proxy_item=$proxy
-  done
-fi
+. ~/.bash_local          # Local settings
