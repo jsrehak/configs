@@ -26,7 +26,7 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 # Load in the git branch prompt script.
-source ~/.git-prompt.sh
+source ~/.scripts/git-prompt.sh
 
 case "$TERM" in
     xterm-color) color_prompt=yes;;
@@ -72,8 +72,4 @@ fi
 
 # Other files ########################################################
 . ~/.bash_aliases        # Bash aliases
-. ~/.bash_moose          # Environment variables for moose
-
-if [ "$(uname -r | grep -c ARCH)" = 1 ]; then
-    . ~/.bash_arch           # Bash settings specific to my arch system
-fi
+. ~/.bash_local          # Local settings
