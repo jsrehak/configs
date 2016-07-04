@@ -73,4 +73,3 @@ fi
 # Other files ########################################################
 . ~/.bash_aliases        # Bash aliases
 . ~/.bash_local          # Local settings
-
