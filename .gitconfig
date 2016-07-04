@@ -7,5 +7,6 @@
 	ci = commit
 	st = status
 	br = branch
+	po = push origin
 	unstage = reset HEAD --
 	last = log -1 HEAD
