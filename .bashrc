@@ -25,8 +25,9 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-# Load in the git branch prompt script.
+# Load in the git branch prompt and autocompletion script.
 source ~/.scripts/git-prompt.sh
+source ~/.scripts/git_completion.sh
 
 case "$TERM" in
     xterm-color) color_prompt=yes;;
@@ -73,3 +74,4 @@ fi
 # Other files ########################################################
 . ~/.bash_aliases        # Bash aliases
 . ~/.bash_local          # Local settings
+
