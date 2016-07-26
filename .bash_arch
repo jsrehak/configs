@@ -1,7 +1,0 @@
-archey3
-
-#Start keychain for SSH keys
-eval $(keychain --eval --quiet --confhost id_rsa)
-
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp -Dswing.aatext=true -Dawt.useSystemAAFontSettings=gasp -Dsun.java2d.xrender=true'
-
