@@ -1,1 +1,2 @@
 xterm*borderWidth: 0
+XTerm*metaSendsEscape: true

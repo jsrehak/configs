@@ -15,3 +15,5 @@ alias condatog='source ~/.scripts/conda_toggle.sh'
 alias moose='source ~/.bash_moose'
 
 . ~/.bash_moose          # Environment variables for moose
+
+export VISUAL="emacs"
