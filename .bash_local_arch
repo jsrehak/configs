@@ -9,6 +9,9 @@ export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp -Dswing.aatext=true -Da
 alias dpon='xrandr --output DP1 --auto --above eDP1'
 alias dpoff='xrandr --output DP1 --off'
 
+#Alias to remove unneeded packages
+alias pacclean='sudo pacman -Rns $(pacman -Qqtd)'
+
 # MOOSE Support
 #Alias to add/remove anaconda from PATH
 alias condatog='source ~/.scripts/conda_toggle.sh'
