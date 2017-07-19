@@ -20,3 +20,6 @@ alias moose='source ~/.bash_moose'
 . ~/.bash_moose          # Environment variables for moose
 
 export VISUAL="emacs"
+
+#pip
+export PATH="~/.local/bin:$PATH"
