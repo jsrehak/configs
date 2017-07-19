@@ -204,10 +204,11 @@ exec xmodmap .xmodmap
 exec --no-startup-id nm-applet
 
 #Start Compton
-#exec compton --config .compton.conf -b
+exec compton --config .compton.conf -b
 #Disable titlebars
 #new_window pixel
 
 #Run compton as a background daemon
-#exec --no-startup-id compton -cCGb --backend glx --vsync opengl
+exec --no-startup-id compton -cCGb --backend glx --vsync opengl
 #new_window pixel
+exec urxvt

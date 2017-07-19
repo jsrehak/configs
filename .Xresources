@@ -8,3 +8,15 @@ rofi.color-window: #000000, #000000, #000000
 rofi.color-normal: #000000, #88aff4, #29364c, #4377ba, #ffffff
 rofi.color-active: #000000, #88aff4, #2c384f, #88aff4, #fdf6e3
 rofi.color-urgent: #88f4cc, #000000, #6bcda9, #aa88f4, #fdf6e3
+
+! URXVT Theme
+urxvt.font: xft:inconsolata
+urxvt.depth: 32
+urxvt.background: [50]#000000
+urxvt.foreground: #ffffff
+urxvt.cursorColor: #ffffff
+urxvt.scrollBar: false
+urxvt.cursorBlink: true
+urxvt.fading: 50
+urxvt.internalBorder: 0
+urxvt.externalBorder: 0
