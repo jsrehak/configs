@@ -1,2 +1,10 @@
 xterm*borderWidth: 0
 XTerm*metaSendsEscape: true
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #000000, #000000, #000000
+rofi.color-normal: #000000, #88aff4, #29364c, #4377ba, #ffffff
+rofi.color-active: #000000, #88aff4, #2c384f, #88aff4, #fdf6e3
+rofi.color-urgent: #88f4cc, #000000, #6bcda9, #aa88f4, #fdf6e3
