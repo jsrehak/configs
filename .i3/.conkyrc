@@ -32,24 +32,26 @@ override_utf8_locale no
 # set to 1 to disable averaging
 cpu_avg_samples 2
 
+
+
 # Stuff after 'TEXT' will be formatted on screen
 TEXT
 
 # JSON for i3bar
 
  [
- #{"full_text": "${exec xtitle -t 50 | tr -d '\042'}", "color":"\#ffcc55"},
- {"full_text": "${exec bash ~/.scripts/volume.sh}", "color":"\#ffcc55"},
- {"full_text": "" ,"color":"\#ffcc55","separator":false,"separator_block_width":6},\
- {"full_text":"${battery BAT0} ${battery BAT1} (${battery_time BAT0} ${battery_time BAT1})","color":"\#ffcc55","separator":true},
+ #{"full_text": "${exec xtitle -t 50 | tr -d '\042'}", "color":"\#88AFF4"},
+ {"full_text": "${exec bash ~/.scripts/volume.sh}", "color":"\#88AFF4"},
+ {"full_text": "" ,"color":"\#88AFF4","separator":false,"separator_block_width":6},\
+ {"full_text":"${battery BAT0} ${battery BAT1} (${battery_time BAT0} ${battery_time BAT1})","color":"\#88AFF4","separator":true},
 
- { "full_text" : " / ${fs_free /} /home ${fs_free /home}" , "color" : "\#ffcc55"},
+ { "full_text" : " / ${fs_free /} /home ${fs_free /home}" , "color" : "\#88AFF4"},
 
  { "full_text" : "RAM ${memperc}%" , "color" :
-    ${if_match ${memperc}<90}"\#ffcc55"${else}"\#ff0000"${endif} },
+    ${if_match ${memperc}<90}"\#88AFF4"${else}"\#ff0000"${endif} },
 
 
- { "full_text" : "${time %A, %B %d, %Y}", "color" : "\#ffcc55f"},
- { "full_text" : "${time %l:%M %p} ", "color" : "\#ffeecc"},
- { "full_text" : " ${wireless_essid}", "color" : "\#ffcc55"}
+ { "full_text" : "${time %A, %B %d, %Y}", "color" : "\#88AFF4f"},
+ { "full_text" : "${time %l:%M %p} ", "color" : "\#88f4cc"},
+ { "full_text" : " ${wireless_essid}", "color" : "\#88AFF4"}
     ],
