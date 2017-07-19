@@ -27,7 +27,7 @@ floating_modifier $mod
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
 # bindsym $mod+Return exec xterm -rv -fa "Terminus:size=12:antialias=true"
-bindsym $mod+Return exec xterm -rv -fa "inconsola:size=10:antialias=true"
+bindsym $mod+Return exec urxvt -bg [100]#000000
 bindsym $mod+Shift+Return exec urxvt
 
 # start editor
