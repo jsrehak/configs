@@ -200,8 +200,8 @@ bar {
 }
 
 #Set keybindings
-exec xmodmap .xmodmap
 exec setxkbmap -option compose:menu
+exec xmodmap .xmodmap
 
 #Start network manager applet -- disabled due to using wicd
 exec --no-startup-id nm-applet
