@@ -13,7 +13,7 @@ rofi.color-urgent: #88f4cc, #000000, #6bcda9, #aa88f4, #fdf6e3
 urxvt.font: xft:inconsolata
 urxvt.depth: 32
 urxvt.letterSpace: 1
-urxvt.background: [50]#000000
+urxvt.background: [100]#000000
 urxvt.foreground: #ffffff
 urxvt.cursorColor: #ffffff
 urxvt.scrollBar: false

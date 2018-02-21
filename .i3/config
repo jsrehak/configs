@@ -27,8 +27,9 @@ floating_modifier $mod
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
 # bindsym $mod+Return exec xterm -rv -fa "Terminus:size=12:antialias=true"
-bindsym $mod+Return exec urxvt -bg [100]#000000
-bindsym $mod+Shift+Return exec urxvt
+# bindsym $mod+Return exec urxvt -bg [100]#000000
+#bindsym $mod+Shift+Return exec urxvt
+bindsym $mod+Return exec urxvt
 
 # start editor
 bindsym $mod+space exec emacs
@@ -109,8 +110,8 @@ bindsym $mod+Shift+d exec --no-startup-id i3lock-fancy -p -- scrot -z
 # Workspace names and variables
 set $WS1 1 
 set $WS2 2 
-set $WS3 3 
-set $WS4 4 /
+set $WS3 3 
+set $WS4 4 /
 set $WS5 5 
 set $WS6 6 
 set $WS7 7 /
