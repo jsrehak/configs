@@ -23,3 +23,12 @@ export VISUAL="emacs"
 
 #pip
 export PATH="~/.local/bin:$PATH"
+
+# Clang tidy
+ct-bart() {
+	  clang-tidy --format-style='google' "$1" -checks="readability-*,modernize-*,google-*,bugprone-*" -header-filter=./BART/src/*
+}
+
+cmake-bart() {
+	     cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .. "$1"
+	     }
