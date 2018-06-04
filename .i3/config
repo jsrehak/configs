@@ -110,7 +110,7 @@ bindsym $mod+Shift+d exec --no-startup-id i3lock-fancy -p -- scrot -z
 # Workspace names and variables
 set $WS1 1 
 set $WS2 2 
-set $WS3 3 
+set $WS3 3 
 set $WS4 4 /
 set $WS5 5 
 set $WS6 6 
