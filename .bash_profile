@@ -26,6 +26,9 @@ export PATH
 EDITOR=emacs
 export EDITOR
 
+VISUAL=emacs
+export VISUAL
+
 #Set XDG Base directory specification
 XDG_CONFIG_HOME=~/.config
 export XDG_CONFIG_HOME
