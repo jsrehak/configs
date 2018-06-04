@@ -40,18 +40,18 @@ TEXT
 # JSON for i3bar
 
  [
- #{"full_text": "${exec xtitle -t 50 | tr -d '\042'}", "color":"\#88AFF4"},
- {"full_text": "${exec bash ~/.scripts/volume.sh}", "color":"\#88AFF4"},
- {"full_text": "" ,"color":"\#88AFF4","separator":false,"separator_block_width":6},\
- {"full_text":"${battery BAT0} ${battery BAT1} (${battery_time BAT0} ${battery_time BAT1})","color":"\#88AFF4","separator":true},
+ #{"full_text": "${exec xtitle -t 50 | tr -d '\042'}", "color":"\#FFFFFF"},
+ {"full_text": "${exec bash ~/.scripts/volume.sh}", "color":"\#FFFFFF"},
+ {"full_text": "" ,"color":"\#FFFFFF","separator":false,"separator_block_width":6},\
+ {"full_text":"${battery BAT0} ${battery BAT1} (${battery_time BAT0} ${battery_time BAT1})","color":"\#FFFFFF","separator":true},
 
- { "full_text" : " / ${fs_free /} /home ${fs_free /home}" , "color" : "\#88AFF4"},
+ { "full_text" : " / ${fs_free /} /home ${fs_free /home}" , "color" : "\#FFFFFF"},
 
  { "full_text" : "RAM ${memperc}%" , "color" :
-    ${if_match ${memperc}<90}"\#88AFF4"${else}"\#ff0000"${endif} },
+    ${if_match ${memperc}<90}"\#FFFFFF"${else}"\#ff0000"${endif} },
 
 
- { "full_text" : "${time %A, %B %d, %Y}", "color" : "\#88AFF4f"},
- { "full_text" : "${time %l:%M %p} ", "color" : "\#88f4cc"},
- { "full_text" : " ${wireless_essid}", "color" : "\#88AFF4"}
+ { "full_text" : "${time %A, %B %d, %Y}", "color" : "\#FFFFFF"},
+ { "full_text" : "${time %l:%M %p} ", "color" : "\#FFFFFF"},
+ { "full_text" : " ${wireless_essid}", "color" : "\#FFFFFF"}
     ],
