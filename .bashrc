@@ -74,4 +74,4 @@ fi
 . ~/.bash_aliases        # Bash aliases
 . ~/.bash_local          # Local settings
 
-LS_COLORS=$LS_COLORS:'di=1;44:' ; export LS_COLORS
+# LS_COLORS=$LS_COLORS:'di=1;44:' ; export LS_COLORS

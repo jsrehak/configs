@@ -32,8 +32,6 @@ override_utf8_locale no
 # set to 1 to disable averaging
 cpu_avg_samples 2
 
-
-
 # Stuff after 'TEXT' will be formatted on screen
 TEXT
 
@@ -42,7 +40,7 @@ TEXT
  [
  #{"full_text": "${exec xtitle -t 50 | tr -d '\042'}", "color":"\#FFFFFF"},
  {"full_text": "${exec bash ~/.scripts/volume.sh}", "color":"\#FFFFFF"},
- {"full_text": "" ,"color":"\#FFFFFF","separator":false,"separator_block_width":6},\
+ {"full_text": ${font FontAwesome:size=9}"","color":"\#FFFFFF","separator":false,"separator_block_width":6},\
  {"full_text":"${battery BAT0} ${battery BAT1} (${battery_time BAT0} ${battery_time BAT1})","color":"\#FFFFFF","separator":true},
 
  { "full_text" : " / ${fs_free /} /home ${fs_free /home}" , "color" : "\#FFFFFF"},

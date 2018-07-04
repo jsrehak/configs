@@ -1,0 +1,4 @@
+export PATH=/home/josh/anaconda2/bin:$PATH
+export DEAL_II_DIR=/home/josh/deal.ii-candi/deal.II-v9.0.0
+export CXX=/usr/bin/mpicxx
+export CC=/usr/bin/mpicc
