@@ -17,3 +17,8 @@ alias l='ls -CF'
 
 # emacs alias
 alias e='emacs -nw'
+
+# Docker
+alias dockerrmcont='docker ps -aq --no-trunc -f status=exited | xargs docker rm'
+alias dockerrmimg='docker images -q --filter dangling=true | xargs docker rmi'
+
