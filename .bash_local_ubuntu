@@ -1,6 +1,12 @@
-export PATH=/home/josh/anaconda2/bin:$PATH
+export PATH=$PATH:/home/josh/anaconda2/bin
+export BROWSER=/snap/bin/chromium
 export DEAL_II_DIR=/home/josh/deal.ii-candi/deal.II-v9.0.0
 export CXX=/usr/bin/mpicxx
 export CC=/usr/bin/mpicc
 
 eval $(keychain --eval --quiet id_rsa)
+eval $(xmodmap .xmodmap)
+
+alias chromium='chromium --alsa-output-device="hw:1,0"'
+alias cmake='cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
+alias visit='~/software/visit2_13_2.linux-x86_64/bin/visit'

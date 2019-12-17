@@ -6,3 +6,6 @@
 GPATH
 GRTAGS
 GTAGS
+
+#clion
+.idea/*

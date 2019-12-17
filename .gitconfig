@@ -8,6 +8,7 @@
 	st = status
 	br = branch
 	po = push origin
+	poh = push origin HEAD
 	unstage = reset HEAD --
 	last = log -1 HEAD
 	logg = log --graph --pretty=short --all --abbrev-commit --oneline
