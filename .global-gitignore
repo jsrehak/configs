@@ -9,3 +9,6 @@ GTAGS
 
 #clion
 .idea/*
+
+#cmake
+cmake-build-debug/*
